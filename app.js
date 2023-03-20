@@ -28,11 +28,15 @@ let answers = [];
 let username = prompt("What is your name?");
 let gender = "";
 
+function typeGender(){
 while (gender !== "male" && gender !== "female") {
   gender = prompt("What is your gender? (male/female)");
 }
+}
 
-let drinkType = prompt("Would you like a hot or cold drink?");
+typeGender();
+
+let drinkType = prompt("Would you like a hot or cold drink☕?");
 let drinkName = prompt("What kind of drink would you like?");
 
 answers.push(username, gender, drinkType, drinkName);
