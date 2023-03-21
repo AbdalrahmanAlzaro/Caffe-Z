@@ -54,6 +54,7 @@ for (let i = 0; i < answers.length; i++) {
 
 const divInput = document.getElementById('div1');
 
+const div = document.createElement('div')
 
 const text = document.createElement("p");
 text.textContent = username   ;
@@ -77,5 +78,7 @@ ul.appendChild(li2);
 ul.appendChild(li3);
 
 
-divInput.appendChild(text);
-divInput.appendChild(ul);
+div.appendChild(text);
+div.appendChild(ul);
+
+divInput.appendChild(div);
