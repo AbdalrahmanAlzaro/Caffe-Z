@@ -22,7 +22,9 @@
 
 
 
-//for loops 
+
+
+// // //for loops 
 alert("Welcome to Caffe-Z")
 let answers = [];
 let username = prompt("What is your name?");
@@ -36,11 +38,44 @@ while (gender !== "male" && gender !== "female") {
 
 typeGender();
 
-let drinkType = prompt("Would you like a hot or cold drink☕?");
+let age = prompt("what is your age ");
 let drinkName = prompt("What kind of drink would you like?");
 
-answers.push(username, gender, drinkType, drinkName);
+answers.push(username, gender, age, drinkName);
 
 for (let i = 0; i < answers.length; i++) {
   console.log(answers[i]);
 }
+
+
+
+// Dom
+
+
+const divInput = document.getElementById('div1');
+
+
+const text = document.createElement("p");
+text.textContent = username   ;
+
+
+const ul = document.createElement("ul");
+
+
+const li1 = document.createElement("li");
+li1.textContent = `Gendar : ${gender}`   ;
+
+const li2 = document.createElement("li");
+li2.textContent = `Age : ${age} ` ;
+
+const li3 = document.createElement("li");
+li3.textContent = `Drink : ${drinkName}`  ;
+
+
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
+
+
+divInput.appendChild(text);
+divInput.appendChild(ul);

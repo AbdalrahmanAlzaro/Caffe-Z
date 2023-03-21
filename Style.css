@@ -1,8 +1,9 @@
 body {
     height: 100vh;
     background: linear-gradient(to top left, #28b487, #7dd56f);
+    position: relative;
   }
-
+/* 
   h1 {
     font-family: sans-serif;
     font-size: 50px;
@@ -17,7 +18,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
+
+
+  #div1{
+    position: absolute;
+    transform: translate(51%, 50%);
+    left: 36%;
+  
+
+}
+
 
   footer{
     background: linear-gradient(to top left, #28b487, #7dd56f);
