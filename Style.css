@@ -21,7 +21,7 @@ body {
   } */
 
 
-  #div1{
+  main{
     position: absolute;
     transform: translate(51%, 50%);
     left: 36%;

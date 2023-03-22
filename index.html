@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JavaScript Fundamentals – Part 1</title>
-    <link rel="stylesheet" href="Style.css">
+    <!-- <link rel="stylesheet" href="Style.css"> -->
 
 
 
@@ -64,22 +64,47 @@
 
     <main>
 
-        <div id="div1"></div>
+        <form id="mainBody">
+            <h3>Default input file</h3>
+            <label for="fname">your name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter name">
+            <br>
+            <br>
+            <label for="birthday">Age:</label>
+            <input type="number" id="birthday" name="birthday">
+            <br>
+            <br>
+            <h4>Drink type:</h4>
+            <input type="checkbox" id="hotDrink" name="type" value="hot">
+            <label for="hotDrink">Hot</label>
+            <br>
+            <input type="checkbox" id="coldDrink" name="type1" value="cold">
+            <label for="coldDrink">cold</label>
+            <br>
+            <br>
+            <label for="lname">your drink:</label>
+            <input type="text" id="lname" name="dname" placeholder="Enter drink"><br><br> <input type="submit"
+                value="Submit">
+        </form>
 
+        <div id="div1"></div>
     </main>
 
 
     <footer class="text-center text-lg-start ffo fixed-bottom">
         <div class="text-center p-3">
             © 2023 Copyright : Abd el-rahman
-            <a class="text-dark" href="mailto:abohani20011@gmail.com" target="_blank"> <img
-                    src="imags/gmail.png" alt="Mail me" class="mail"> </a>
+            <a class="text-dark" href="mailto:abohani20011@gmail.com" target="_blank"> <img src="imags/gmail.png"
+                    alt="Mail me" class="mail"> </a>
         </div>
     </footer>
 
 
 
     <script src="app.js"></script>
+
+
+
 </body>
 
 </html>
